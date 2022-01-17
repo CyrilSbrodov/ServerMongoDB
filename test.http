@@ -1,0 +1,37 @@
+PUT http://localhost:9090/61c5ec9abbd6dd11da248d36
+Content-Type: application/json
+
+{"new_age": 31}
+
+###
+POST http://localhost:8082/create
+Content-Type: application/json
+
+{"name": "Паша", "age": 30}
+
+###
+POST http://localhost:8082/create
+Content-Type: application/json
+
+{"name": "Саша", "age": 45}
+
+###
+POST http://localhost:9090/create
+Content-Type: application/json
+
+{"name": "Даша", "age": 31}
+
+###
+POST http://localhost:9090/make_friends
+Content-Type: application/json
+
+{"Source_id": "61c5e555dd3f96c31b6ba622", "Target_id": "61c5e571dd3f96c31b6ba623"}
+
+###
+
+DELETE http://localhost:8082/delete
+Content-Type: application/json
+
+{"id": "61dec431a17562a4296a0c80"}
+
+###
